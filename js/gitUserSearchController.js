@@ -17,5 +17,6 @@ githubUserSearch.controller('GitUserSearchController', [function() {
         }
       ]
     };
+    console.log(self.searchTerm)
   };
 }]);
