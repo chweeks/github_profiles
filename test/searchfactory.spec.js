@@ -23,11 +23,6 @@ describe('factory: Search', function() {
       "avatar_url": "https://avatars.githubusercontent.com/u/30216?v=3",
       "html_url": "https://github.com/tansaku"
     },
-    {
-      "login": "stephenlloyd",
-      "avatar_url": "https://avatars.githubusercontent.com/u/196474?v=3",
-      "html_url": "https://github.com/stephenlloyd"
-    }
   ];
 
   it('responds to query', function() {
@@ -38,8 +33,7 @@ describe('factory: Search', function() {
     search.query('hello')
       .then(function(response) {
         expect(response.data).toEqual(items)
-      })
+      });
     httpBackend.flush();
   })
-
 });
